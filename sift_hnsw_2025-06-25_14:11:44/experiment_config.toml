@@ -1,0 +1,59 @@
+name = "sift_hnsw"
+title = "Search dense HNSWM on SIFT1M"
+description = "Search dense HNSWM on SIFT1M"
+dataset = "SIFT1M"
+build-command = "./target/release/hnsw_plain_dense_build"
+query-command = "./target/release/hnsw_plain_dense_run"
+
+[settings]
+k = 10
+n-runs = 1
+NUMA = "numactl --physcpubind='0-15' --localalloc"
+build = true
+metric = ""
+
+[folder]
+data = "/pscratch/sd/d/dhaura/datasets/SpKNN/kannolo/experiments/sift1m"
+index = "/pscratch/sd/d/dhaura/datasets/SpKNN/kannolo/experiments/sift1m"
+qrels_path = ""
+experiment = "."
+
+[filename]
+dataset = "dataset.npy"
+queries = "queries.npy"
+groundtruth = "groundtruth.npy"
+doc_ids = ""
+query_ids = ""
+index = "ecir_2025_sift1m"
+
+[indexing_parameters]
+m = 16
+efc = 150
+metric = "l2"
+
+[query.efs_10]
+ef-search = 10
+
+[query.efs_20]
+ef-search = 20
+
+[query.efs_40]
+ef-search = 40
+
+[query.efs_80]
+ef-search = 80
+
+[query.efs_120]
+ef-search = 120
+
+[query.efs_200]
+ef-search = 200
+
+[query.efs_400]
+ef-search = 400
+
+[query.efs_600]
+ef-search = 600
+
+[query.efs_800]
+ef-search = 800

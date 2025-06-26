@@ -1,0 +1,8 @@
+Reading Queries
+Starting search
+N queries 10000
+[######] Average Query Time: 344 μs
+Space Usage:
+	Forward Index: 512000008 Bytes
+	Links structure: 195950216 Bytes
+	Total: 707950224 Bytes

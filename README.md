@@ -99,3 +99,26 @@ isbn="978-3-031-88717-8"
 }
 ```
 
+
+## Running Experiments on NERSC
+```bash
+rustup install nightly
+rustup override set nightly
+rustup default nightly
+module load python/3.13 cray-hdf5/1.12.2.9
+python3 -m venv venv
+source venv/bin/activate
+pip install -r scripts/requirements.txt
+RUSTFLAGS="-C target-cpu=native" cargo build --release
+```
+
+## Dataset for Sparse MS MARCO - SPLADE
+```bash
+wget https://huggingface.co/datasets/tuskanny/kannolo-msmarco-splade/resolve/main/dataset.bin
+wget https://huggingface.co/datasets/tuskanny/kannolo-msmarco-splade/resolve/main/doc_ids.npy
+wget https://huggingface.co/datasets/tuskanny/kannolo-msmarco-splade/resolve/main/groundtruth.tsv
+wget https://huggingface.co/datasets/tuskanny/kannolo-msmarco-splade/resolve/main/qrels.dev.small.tsv
+wget https://huggingface.co/datasets/tuskanny/kannolo-msmarco-splade/resolve/main/queries.bin
+wget https://huggingface.co/datasets/tuskanny/kannolo-msmarco-splade/resolve/main/queries_ids.npy
+```
+
