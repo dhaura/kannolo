@@ -1,0 +1,110 @@
+----------------------
+Hardware configuration
+----------------------
+Date: 2025-06-26 20:12:49.824925
+Machine: nid007017
+CPU usage (%): 0.0
+Machine load: 19.51, 84.41, 112.33
+Memory (free, GiB): 474
+Memory (avail, GiB): 464
+Memory (total, GiB): 503
+
+---------------------
+cpufreq configuration
+---------------------
+Number of CPUs with governor set to "performance" (should be equal to the number of CPUs below): 0
+
+-----------------
+CPU configuration
+-----------------
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        48 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               256
+On-line CPU(s) list:                  0-255
+Vendor ID:                            AuthenticAMD
+Model name:                           AMD EPYC 7763 64-Core Processor
+CPU family:                           25
+Model:                                1
+Thread(s) per core:                   2
+Core(s) per socket:                   64
+Socket(s):                            2
+Stepping:                             1
+Frequency boost:                      enabled
+CPU max MHz:                          3529.0520
+CPU min MHz:                          1500.0000
+BogoMIPS:                             4890.58
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 invpcid_single hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin brs arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm
+Virtualization:                       AMD-V
+L1d cache:                            4 MiB (128 instances)
+L1i cache:                            4 MiB (128 instances)
+L2 cache:                             64 MiB (128 instances)
+L3 cache:                             512 MiB (16 instances)
+NUMA node(s):                         8
+NUMA node0 CPU(s):                    0-15,128-143
+NUMA node1 CPU(s):                    16-31,144-159
+NUMA node2 CPU(s):                    32-47,160-175
+NUMA node3 CPU(s):                    48-63,176-191
+NUMA node4 CPU(s):                    64-79,192-207
+NUMA node5 CPU(s):                    80-95,208-223
+NUMA node6 CPU(s):                    96-111,224-239
+NUMA node7 CPU(s):                    112-127,240-255
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Not affected
+Vulnerability Spec rstack overflow:   Mitigation; Safe RET
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected, BHI Not affected
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+------------------------------------------------------------------------------
+NUMA execution command (check if CPU IDs corresponds to physical ones (no HT))
+------------------------------------------------------------------------------
+Shell command: "numactl --physcpubind='0-15' --localalloc"
+
+------------------
+NUMA configuration
+------------------
+available: 8 nodes (0-7)
+node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+node 0 size: 64159 MB
+node 0 free: 59907 MB
+node 1 cpus: 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159
+node 1 size: 64502 MB
+node 1 free: 61437 MB
+node 2 cpus: 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175
+node 2 size: 64502 MB
+node 2 free: 62682 MB
+node 3 cpus: 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191
+node 3 size: 64490 MB
+node 3 free: 62433 MB
+node 4 cpus: 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207
+node 4 size: 64502 MB
+node 4 free: 58576 MB
+node 5 cpus: 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223
+node 5 size: 64502 MB
+node 5 free: 62940 MB
+node 6 cpus: 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239
+node 6 size: 64502 MB
+node 6 free: 62734 MB
+node 7 cpus: 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255
+node 7 size: 63968 MB
+node 7 free: 55296 MB
+node distances:
+node   0   1   2   3   4   5   6   7 
+  0:  10  12  12  12  32  32  32  32 
+  1:  12  10  12  12  32  32  32  32 
+  2:  12  12  10  12  32  32  32  32 
+  3:  12  12  12  10  32  32  32  32 
+  4:  32  32  32  32  10  12  12  12 
+  5:  32  32  32  32  12  10  12  12 
+  6:  32  32  32  32  12  12  10  12 
+  7:  32  32  32  32  12  12  12  10 

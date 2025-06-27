@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --qos=regular
-#SBATCH --time=02:30:00
+#SBATCH --time=03:30:00
 #SBATCH --nodes=1
 #SBATCH --constraint=cpu
 #SBATCH --output=%j.log
